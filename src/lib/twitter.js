@@ -20,6 +20,9 @@ tstream.on('tweet', (tweet) => {
   channel = client.channels.get('440601976804343808'); // Lusternia Unofficial, general chat
   if (channel) channel.send(msg);
 
+  channel = client.channels.get('766449729562738728'); // Lusternia Official, twitter
+  if (channel) channel.send(msg);
+
   /*channel = client.channels.get('378176979826114562'); // Selune, bot-tomfoolery
   if (channel) channel.send(msg);*/
 })
