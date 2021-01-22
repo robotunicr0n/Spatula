@@ -22,6 +22,10 @@ tstream.on('tweet', (tweet) => {
 
   channel = client.channels.get('766449729562738728'); // Lusternia Official, twitter
   if (channel) channel.send(msg);
+  
+  // Send direct to user
+  user = client.users.get('179096562809569282').send(msg);
+  /* This could be extended to use a file to store user ids of individuals wanting direct message updates */
 
   /*channel = client.channels.get('378176979826114562'); // Selune, bot-tomfoolery
   if (channel) channel.send(msg);*/
